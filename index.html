@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Данила Лапшин — AI × Business</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-centered">
+    <img src="https://i.postimg.cc/N5Rht2Jv/Lapsin-Danila-Alekseevic-1080374667-3.jpg" alt="Данила Лапшин" class="hero-avatar">
+    <div class="hero-tag">AI × Business</div>
+    <h1>Данила Лапшин</h1>
+    <p class="hero-description">
+      Работаю на стыке искусственного интеллекта, данных и бизнес-задач.
+      Интересуют проекты в финтехе, продуктовой аналитике и прикладных исследованиях с понятными метриками и измеримым результатом.
+    </p>
+    <div class="hero-cta">
+      <a href="https://t.me/Danielium" target="_blank" class="btn-primary">Написать в Telegram</a>
+      <a href="#cases" class="btn-secondary">Смотреть кейсы</a>
+    </div>
+  </div>
+</section>
+
+<main class="container">
+  <!-- ABOUT -->
+  <section class="section">
+    <div class="section-title">Обо мне</div>
+    <div class="section-content">
+      Интересуюсь применением AI в финтехе, продуктовой аналитике и исследованиях.
+      Ищу проекты с реальными данными, понятными метриками и прикладным результатом.
+    </div>
+  </section>
+
+  <!-- CASES -->
+  <section id="cases" class="section">
+      <div class="section-title">Кейсы</div>
+      <div class="section-content">
+          <div class="accordion-block">
+              <div class="accordion-header" onclick="toggleAccordion('accordion-cases')">
+                  <span class="subsection-title" style="margin: 0">Мои проекты</span>
+                  <span class="accordion-icon" id="icon-accordion-cases">−</span>
+              </div>
+              <div class="accordion-content active" id="accordion-cases">
+                  <div class="case-cards">
+                      <a href="case-mikrovklad.html" class="case-card-link">
+                          <div class="case-card">
+                              <img src="https://i.postimg.cc/XJCx61Mn/Slajd-29.png" alt="МикроВклад" class="case-card-image">
+                              <div class="case-card-content">
+                                  <div class="case-card-label">Концепт</div>
+                                  <h3>МикроВклад</h3>
+                                  <p>Продукт для молодых инвесторов. Кейс Мосбиржи, 1 место на Deadline 2025.</p>
+                              </div>
+                          </div>
+                      </a>
+                      <a href="case-finclub.html" class="case-card-link">
+                          <div class="case-card">
+                              <img src="https://i.postimg.cc/q7vLbMB1/Slide-4-3-2.jpg" alt="ФинКлуб" class="case-card-image">
+                              <div class="case-card-content">
+                                  <div class="case-card-label">Концепт</div>
+                                  <h3>ФинКлуб</h3>
+                                  <p>Сервис совместного инвестирования. Стажировка в MOEX.</p>
+                              </div>
+                          </div>
+                      </a>
+                      <a href="case-ai-fitting.html" class="case-card-link">
+                          <div class="case-card">
+                              <img src="https://i.postimg.cc/FKPQ8RyJ/Slide-16-9-6.jpg" alt="AI-примерка" class="case-card-image">
+                              <div class="case-card-content">
+                                  <div class="case-card-label">AI Проект</div>
+                                  <h3>AI-примерка одежды</h3>
+                                  <p>Инструмент виртуальной примерки. Призёр регионального этапа ВШЭ.</p>
+                              </div>
+                          </div>
+                      </a>
+                      <a href="https://t.me/Danielium" target="_blank" class="add-project-card">
+                          <div class="add-project-icon">+</div>
+                          <h3>Есть идея проекта?</h3>
+                          <p>Напишите мне в Telegram</p>
+                      </a>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </section>
+
+  <!-- ACHIEVEMENTS -->
+  <section class="section">
+      <div class="section-title">Достижения</div>
+      <div class="section-content">
+          <div class="accordion-block" style="margin-bottom: 40px">
+              <div class="accordion-header" onclick="toggleAccordion('accordion1')">
+                  <span class="subsection-title" style="margin: 0">Конкурсы</span>
+                  <span class="accordion-icon" id="icon-accordion1">+</span>
+              </div>
+              <div class="accordion-content" id="accordion1">
+                  <div class="list">
+                      <div class="list-item">Победитель Deadline 2025</div>
+                      <div class="list-item">Финалист всероссийского кейс-чемпионата</div>
+                      <div class="list-item">Финалист Deadline 2024</div>
+                      <div class="list-item">Призёр регионального этапа ВШЭ</div>
+                      <div class="list-item">Участие в Дататоне 2.0</div>
+                      <div class="list-item">Участие в конкурсе проектов Сириус.Лето</div>
+                  </div>
+              </div>
+          </div>
+
+          <div class="accordion-block">
+              <div class="accordion-header" onclick="toggleAccordion('accordion2')">
+                  <span class="subsection-title" style="margin: 0">Опыт</span>
+                  <span class="accordion-icon" id="icon-accordion2">+</span>
+              </div>
+              <div class="accordion-content" id="accordion2">
+                  <div class="list">
+                      <div class="list-item">Стажировка в MOEX</div>
+                      <div class="list-item">МикроВклад</div>
+                      <div class="list-item">ФинКлуб</div>
+                      <div class="list-item">AI-примерка одежды</div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section class="section">
+    <div class="section-title">Навыки</div>
+    <div class="section-content">
+      Аналитика · Python · SQL · ML · Product thinking
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <a href="https://t.me/Danielium" target="_blank" class="footer-link">
+    добавим ваш проект?
+  </a>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
