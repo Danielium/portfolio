@@ -312,24 +312,16 @@ a { color: inherit; text-decoration: none; }
   opacity: 1;
 }
 
-.btn-contact {
-  background: #fff;
-  color: #0e0e0e;
-  padding: 10px 24px;
-  border-radius: 6px;
-  font-size: 14px;
-  font-weight: 500;
-  transition: transform 0.2s, background 0.2s;
+.case-nav-name {
+  font-size: 16px;
+  font-weight: 600;
+  opacity: 1;
 }
 
-.btn-contact:hover {
-  transform: translateY(-2px);
-  background: #f0f0f0;
-}
 
 /* ========== CASE HERO ========== */
 .case-hero {
-  padding: 120px 24px 80px;
+  padding: 120px 24px 30px;
   text-align: center;
 }
 
@@ -362,13 +354,35 @@ a { color: inherit; text-decoration: none; }
 
 /* ========== CASE IMAGE ========== */
 .case-image-section {
-  padding: 40px 0 80px;
+  padding: 40px 0 30px;
 }
 
 .case-main-image {
   width: 100%;
   border-radius: 24px;
   display: block;
+}
+
+/* ========== CASE PRESENTATION BUTTON ========== */
+.case-presentation {
+  padding: 40px 0;
+  text-align: center;
+}
+
+.btn-presentation {
+  background: #fff;
+  color: #0e0e0e;
+  padding: 14px 32px;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 500;
+  transition: transform 0.2s, background 0.2s;
+  display: inline-block;
+  text-decoration: none;
+}
+
+.btn-presentation:hover {
+  background: #f0f0f0;
 }
 
 /* ========== CASE CONTENT ========== */
