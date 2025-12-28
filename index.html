@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Данила Лапшин — AI × Business</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-centered">
+    <img src="" alt="" class="hero-avatar">
+    <div class="hero-tag"></div>
+    <h1></h1>
+    <p class="hero-description"></p>
+    <div class="hero-cta">
+      <a href="" target="_blank" class="btn-primary">Написать в Telegram</a>
+      <a href="#cases" class="btn-secondary">Смотреть кейсы</a>
+    </div>
+  </div>
+</section>
+
+<main class="container">
+  <!-- ABOUT -->
+  <section class="section">
+    <div class="section-title">Обо мне</div>
+    <div class="section-content"></div>
+  </section>
+
+  <!-- CASES -->
+  <section id="cases" class="section">
+      <div class="section-title">Кейсы</div>
+      <div class="section-content">
+          <div class="accordion-block">
+              <div class="accordion-header" onclick="toggleAccordion('accordion-cases')">
+                  <span class="subsection-title" style="margin: 0">Мои проекты</span>
+                  <span class="accordion-icon" id="icon-accordion-cases">−</span>
+              </div>
+              <div class="accordion-content active" id="accordion-cases">
+                  <div class="case-cards">
+                      <!-- Кейсы загружаются из data.json -->
+                  </div>
+              </div>
+          </div>
+      </div>
+  </section>
+
+  <!-- ACHIEVEMENTS -->
+  <section class="section">
+      <div class="section-title">Достижения</div>
+      <div class="section-content">
+          <div class="accordion-block" style="margin-bottom: 40px">
+              <div class="accordion-header" onclick="toggleAccordion('accordion1')">
+                  <span class="subsection-title" style="margin: 0">Конкурсы</span>
+                  <span class="accordion-icon" id="icon-accordion1">+</span>
+              </div>
+              <div class="accordion-content" id="accordion1">
+                  <div class="list">
+                      <!-- Конкурсы загружаются из data.json -->
+                  </div>
+              </div>
+          </div>
+
+          <div class="accordion-block">
+              <div class="accordion-header" onclick="toggleAccordion('accordion2')">
+                  <span class="subsection-title" style="margin: 0">Опыт</span>
+                  <span class="accordion-icon" id="icon-accordion2">+</span>
+              </div>
+              <div class="accordion-content" id="accordion2">
+                  <div class="list">
+                      <!-- Опыт загружается из data.json -->
+                  </div>
+              </div>
+          </div>
+      </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section class="section">
+    <div class="section-title">Навыки</div>
+    <div class="section-content"></div>
+  </section>
+</main>
+
+<footer class="footer">
+  <a href="" target="_blank" class="footer-link">
+    добавим Ваш проект?
+  </a>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
