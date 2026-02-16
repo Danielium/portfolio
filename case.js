@@ -1,41 +1,32 @@
 // Загрузка данных кейса
-let siteData = null;
 let currentCase = null;
 
-async function loadCaseData() {
-  try {
-    // Получаем ID кейса из URL
-    const urlParams = new URLSearchParams(window.location.search);
-    const caseId = urlParams.get('id');
-
-    if (!caseId) {
-      window.location.href = 'index.html';
-      return;
-    }
-
-    // Загружаем данные: сначала из localStorage (админка), потом из файла
-    const localData = localStorage.getItem('siteData');
-    if (localData) {
-      siteData = JSON.parse(localData);
-    } else {
-      const response = await fetch('data.json');
-      siteData = await response.json();
-    }
-
-    // Находим нужный кейс
-    currentCase = siteData.cases.find(c => c.id === caseId);
-
-    if (!currentCase) {
-      window.location.href = 'index.html';
-      return;
-    }
-
-    // Применяем данные к странице
-    applyCaseData();
-  } catch (error) {
-    console.error('Ошибка загрузки данных:', error);
-    window.location.href = 'index.html';
+function loadCaseData() {
+  // Данные уже загружены через data.js в переменную siteData
+  if (typeof siteData === 'undefined') {
+    console.error('Ошибка: данные не найдены');
+    return;
   }
+
+  // Получаем ID кейса из URL
+  const urlParams = new URLSearchParams(window.location.search);
+  const caseId = urlParams.get('id');
+
+  if (!caseId) {
+    window.location.href = 'index.html';
+    return;
+  }
+
+  // Находим нужный кейс
+  currentCase = siteData.cases.find(c => c.id === caseId);
+
+  if (!currentCase) {
+    window.location.href = 'index.html';
+    return;
+  }
+
+  // Применяем данные к странице
+  applyCaseData();
 }
 
 function applyCaseData() {
@@ -140,26 +131,9 @@ function applyCaseData() {
   }
 }
 
-// Форматирование текста (замена \n на <br>)
-function formatText(text) {
-  if (!text) return '';
-  return escapeHtml(text).replace(/\n/g, '<br>');
-}
-
-// Экранирование HTML
-function escapeHtml(text) {
-  if (!text) return '';
-  const div = document.createElement('div');
-  div.textContent = text;
-  return div.innerHTML;
-}
-
 // Запуск при загрузке страницы
-document.addEventListener('DOMContentLoaded', loadCaseData);
-
-// Обновление при изменении localStorage (если админка открыта в другой вкладке)
-window.addEventListener('storage', (e) => {
-  if (e.key === 'siteData') {
-    loadCaseData();
-  }
+document.addEventListener('DOMContentLoaded', () => {
+  loadCaseData();
+  setupImageErrorHandlers();
 });
+

@@ -1,96 +1,116 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="Данила Лапшин — специалист на стыке AI и бизнеса. Портфолио проектов, кейсы и достижения.">
+  <meta name="author" content="Данила Лапшин">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Данила Лапшин — AI × Business">
+  <meta property="og:description" content="Работаю на стыке искусственного интеллекта и бизнес-задач">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://i.postimg.cc/N5Rht2Jv/Lapsin-Danila-Alekseevic-1080374667-3.jpg">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml"
+    href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>👨‍💻</text></svg>">
+
   <title>Данила Лапшин — AI × Business</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
 
-<!-- HERO -->
-<section class="hero">
-  <div class="hero-centered">
-    <img src="" alt="" class="hero-avatar">
-    <div class="hero-tag"></div>
-    <h1></h1>
-    <p class="hero-description"></p>
-    <div class="hero-cta">
-      <a href="" target="_blank" class="btn-primary">Написать в Telegram</a>
-      <a href="#cases" class="btn-secondary">Смотреть кейсы</a>
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-centered">
+      <img src="https://i.postimg.cc/N5Rht2Jv/Lapsin-Danila-Alekseevic-1080374667-3.jpg" alt="Фото Данилы Лапшина"
+        class="hero-avatar" onerror="this.style.background='linear-gradient(135deg, #1a1a1a, #2a2a2a)'">
+      <div class="hero-tag">AI × Business</div>
+      <h1>Данила Лапшин</h1>
+      <p class="hero-description">Работаю на стыке искусственного интеллекта и бизнес-задач</p>
+      <div class="hero-cta">
+        <a href="https://t.me/Danielium" target="_blank" class="btn-primary">Написать в Telegram</a>
+        <a href="#cases" class="btn-secondary">Смотреть кейсы</a>
+      </div>
     </div>
-  </div>
-</section>
-
-<main class="container">
-  <!-- ABOUT -->
-  <section class="section">
-    <div class="section-title">Обо мне</div>
-    <div class="section-content"></div>
   </section>
 
-  <!-- CASES -->
-  <section id="cases" class="section">
+  <main class="container">
+    <!-- ABOUT -->
+    <section class="section">
+      <div class="section-title">Обо мне</div>
+      <div class="section-content"></div>
+    </section>
+
+    <!-- CASES -->
+    <section id="cases" class="section">
       <div class="section-title">Кейсы</div>
       <div class="section-content">
-          <div class="accordion-block">
-              <div class="accordion-header" onclick="toggleAccordion('accordion-cases')">
-                  <span class="subsection-title" style="margin: 0">Мои проекты</span>
-                  <span class="accordion-icon" id="icon-accordion-cases">−</span>
-              </div>
-              <div class="accordion-content active" id="accordion-cases">
-                  <div class="case-cards">
-                      <!-- Кейсы загружаются из data.json -->
-                  </div>
-              </div>
+        <div class="accordion-block">
+          <div class="accordion-header" onclick="toggleAccordion('accordion-cases')">
+            <span class="subsection-title" style="margin: 0">Мои проекты</span>
+            <span class="accordion-icon" id="icon-accordion-cases">−</span>
           </div>
+          <div class="accordion-content active" id="accordion-cases">
+            <div class="case-cards">
+              <!-- Кейсы загружаются из data.json -->
+            </div>
+          </div>
+        </div>
       </div>
-  </section>
+    </section>
 
-  <!-- ACHIEVEMENTS -->
-  <section class="section">
+    <!-- ACHIEVEMENTS -->
+    <section class="section">
       <div class="section-title">Достижения</div>
       <div class="section-content">
-          <div class="accordion-block" style="margin-bottom: 40px">
-              <div class="accordion-header" onclick="toggleAccordion('accordion1')">
-                  <span class="subsection-title" style="margin: 0">Конкурсы</span>
-                  <span class="accordion-icon" id="icon-accordion1">+</span>
-              </div>
-              <div class="accordion-content" id="accordion1">
-                  <div class="list">
-                      <!-- Конкурсы загружаются из data.json -->
-                  </div>
-              </div>
+        <div class="accordion-block" style="margin-bottom: 40px">
+          <div class="accordion-header" onclick="toggleAccordion('accordion1')">
+            <span class="subsection-title" style="margin: 0">Конкурсы</span>
+            <span class="accordion-icon" id="icon-accordion1">+</span>
           </div>
+          <div class="accordion-content" id="accordion1">
+            <div class="list">
+              <!-- Конкурсы загружаются из data.json -->
+            </div>
+          </div>
+        </div>
 
-          <div class="accordion-block">
-              <div class="accordion-header" onclick="toggleAccordion('accordion2')">
-                  <span class="subsection-title" style="margin: 0">Опыт</span>
-                  <span class="accordion-icon" id="icon-accordion2">+</span>
-              </div>
-              <div class="accordion-content" id="accordion2">
-                  <div class="list">
-                      <!-- Опыт загружается из data.json -->
-                  </div>
-              </div>
+        <div class="accordion-block">
+          <div class="accordion-header" onclick="toggleAccordion('accordion2')">
+            <span class="subsection-title" style="margin: 0">Опыт</span>
+            <span class="accordion-icon" id="icon-accordion2">+</span>
           </div>
+          <div class="accordion-content" id="accordion2">
+            <div class="list">
+              <!-- Опыт загружается из data.json -->
+            </div>
+          </div>
+        </div>
       </div>
-  </section>
+    </section>
 
-  <!-- SKILLS -->
-  <section class="section">
-    <div class="section-title">Навыки</div>
-    <div class="section-content"></div>
-  </section>
-</main>
+    <!-- SKILLS -->
+    <section class="section">
+      <div class="section-title">Навыки</div>
+      <div class="section-content"></div>
+    </section>
+  </main>
 
-<footer class="footer">
-  <a href="" target="_blank" class="footer-link">
-    добавим Ваш проект?
-  </a>
-</footer>
+  <footer class="footer">
+    <a href="https://t.me/Danielium" target="_blank" class="footer-link">
+      добавим Ваш проект?
+    </a>
+  </footer>
 
-<script src="script.js"></script>
+  <script src="data.js"></script>
+  <script src="utils.js"></script>
+  <script src="script.js"></script>
 </body>
+
 </html>
