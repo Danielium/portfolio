@@ -2,7 +2,7 @@ const siteData = {
     "profile": {
         "name": "Данила Лапшин",
         "tag": "AI × Business",
-        "avatar": "https://i.postimg.cc/N5Rht2Jv/Lapsin-Danila-Alekseevic-1080374667-3.jpg",
+        "avatar": "images/avatar.jpg",
         "description": "Работаю на стыке искусственного интеллекта и бизнес-задач",
         "about": "Привет, меня зовут Лапшин Данила, мне 18 лет, учусь в Центральном университете и изучаю AI. Мне интересно развиваться в этой сфере и совмещать искусственный интеллект с задачами из бизнеса. В школе и университете участвовал в хакатонах и кейс‑чемпионатах, стажировался в Мосбирже. О моих проектах Вы можете узнать подробнее ниже:",
         "telegram": "https://t.me/Danielium",
@@ -14,12 +14,12 @@ const siteData = {
             "title": "МикроВклад",
             "label": "Концепт",
             "description": "Продукт для молодых инвесторов. Кейс Мосбиржи, 1 место на Deadline 2025.",
-            "image": "https://i.postimg.cc/XJCx61Mn/Slajd-29.png",
+            "image": "images/minivklad.jpg",
             "link": "case.html?id=mikrovklad",
             "order": 1,
             "heroLabel": "Концепт · Deadline 2025",
             "heroSubtitle": "Продукт для молодых инвесторов с низким порогом входа",
-            "mainImage": "https://i.postimg.cc/mgPHnzf6/photo-2025-04-29-16-04-30.jpg",
+            "mainImage": "images/minivklad.jpg",
             "presentation": {
                 "url": "https://drive.google.com/file/d/166y7oX40F-nMk-MdS9lG_Knu60OjHTRj/view?usp=sharing",
                 "buttonText": "Скачать презентацию"
@@ -63,12 +63,12 @@ const siteData = {
             "title": "ФинКлуб",
             "label": "Концепт",
             "description": "Сервис совместного инвестирования. Стажировка в MOEX.",
-            "image": "https://i.postimg.cc/q7vLbMB1/Slide-4-3-2.jpg",
+            "image": "images/finclub.png",
             "link": "case.html?id=finclub",
             "order": 2,
             "heroLabel": "Концепт · Стажировка MOEX",
             "heroSubtitle": "Платформа для совместного инвестирования",
-            "mainImage": "https://i.postimg.cc/cCJR4F26/image.png",
+            "mainImage": "images/finclub.png",
             "presentation": {
                 "url": "https://drive.usercontent.google.com/u/0/uc?id=1gXZUo0h1gK4x4CJJd8lMBEMQGfS6fFD5&export=download",
                 "buttonText": "Скачать презентацию"
@@ -112,12 +112,12 @@ const siteData = {
             "title": "AI-примерка одежды",
             "label": "AI Проект",
             "description": "Инструмент виртуальной примерки. Призёр регионального этапа ВШЭ.",
-            "image": "https://i.postimg.cc/FKPQ8RyJ/Slide-16-9-6.jpg",
+            "image": "images/aitryon.jpg",
             "link": "case.html?id=ai-fitting",
             "order": 3,
             "heroLabel": "AI Проект · Кейс-чемпионат ВШЭ",
             "heroSubtitle": "Виртуальная примерка для снижения возвратов в e-commerce",
-            "mainImage": "https://i.postimg.cc/85XFwNXj/Slide-16-9-5.jpg",
+            "mainImage": "images/aitryon.jpg",
             "presentation": {
                 "url": "https://drive.google.com/file/d/1Qlg1FcUi3jcDNFtzmkR1r8zYRpbwEcVx/view?usp=sharing",
                 "buttonText": "Скачать презентацию"
