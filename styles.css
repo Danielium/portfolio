@@ -256,6 +256,7 @@ a {
 .case-card-link {
   text-decoration: none;
   color: inherit;
+  display: flex;
 }
 
 .case-card {
@@ -268,6 +269,7 @@ a {
   min-height: 400px;
   display: flex;
   flex-direction: column;
+  flex: 1;
 }
 
 .case-card:hover {
