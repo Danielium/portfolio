@@ -649,7 +649,7 @@ a {
 }
 
 .accordion-content.active {
-  max-height: 2000px;
+  max-height: 8000px;
   opacity: 1;
   margin-bottom: 20px;
 }
